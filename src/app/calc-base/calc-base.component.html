@@ -1,0 +1,6 @@
+<div>
+    <input type="number" [value]="number1" (input)="onInputChangeN1($event)" placeholder="0" />
+    <input type="number" [value]="number2" (input)="onInputChangeN2($event)" placeholder="0" />
+    <input type="number" [value]="result" placeholder="0" readonly/>
+</div>
+<app-calc-buttons [number1]="number1" [number2]="number2" (operationEvent)="handleChildEvent($event)"></app-calc-buttons>
